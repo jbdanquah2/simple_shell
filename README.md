@@ -1,4 +1,4 @@
-## ***SIMPLE SHELL in C***
+## SIMPLE SHELL in C
 
 ### Authors
 - John Danquah-Boateng 
