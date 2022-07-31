@@ -11,8 +11,13 @@ int main(void)
 	int bytes_read;
 	size_t size = 1;
 	char *string;
+	pid_t pid;
 
+	pid = fork();
 	type_prompt();
+	if (pid != 0)
+		wait(NULL);
+
 	string = malloc(sizeof(char) * size);
 	if (string == NULL)
 	{
