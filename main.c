@@ -18,7 +18,7 @@ int main(void)
 	{
 		perror("Error:");
 		exit(1);
-	}	
+	}
 	bytes_read = getline(&string, &size, stdin);
 	while (bytes_read != -1)
 	{
