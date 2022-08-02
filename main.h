@@ -8,7 +8,10 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <string.h>
+#include <sys/stat.h>
 
 void type_prompt();
+char *_strcat(char *dest, char *src);
+void get_command(char *str, char **av);
 
 #endif
