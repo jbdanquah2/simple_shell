@@ -198,7 +198,6 @@ Write a beautiful code that passes the Betty checks
 **Repo:**
 
 -   GitHub repository: `simple_shell`
--   File: `README.md, man_1_simple_shell, AUTHORS`
 
 ### 1\. Simple shell 0.1
 
