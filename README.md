@@ -187,20 +187,9 @@ The Checker will be released at the end of the project (1-2 days before the dead
 Tasks
 -----
 
-### 0\. README, man, AUTHORS
+### 0\. Betty would be proud
 
 mandatory
-
--   Write a `README`
--   Write a `man` for your shell.
--   You should have an `AUTHORS` file at the root of your repository, listing all individuals having contributed content to the repository. Format, see [Docker](https://alx-intranet.hbtn.io/rltoken/UL8J3kgl7HBK_Z9iBL3JFg "Docker")
-
-**Repo:**
-
--   GitHub repository: `simple_shell`
--   File: `README.md, man_1_simple_shell, AUTHORS`
-
-### 1\. Betty would be proud
 
 mandatory
 
@@ -209,8 +198,9 @@ Write a beautiful code that passes the Betty checks
 **Repo:**
 
 -   GitHub repository: `simple_shell`
+-   File: `README.md, man_1_simple_shell, AUTHORS`
 
-### 2\. Simple shell 0.1
+### 1\. Simple shell 0.1
 
 mandatory
 
@@ -263,26 +253,26 @@ env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat 
 
 -   GitHub repository: `simple_shell`
 
-### 3\. Simple shell 0.2
+### 2\. Simple shell 0.2
 
 mandatory
 
 Simple shell 0.1 +
 
--   Handle command lines with arguments
+-  Handle command lines with arguments
 
 **Repo:**
 
 -   GitHub repository: `simple_shell`
 
-### 4\. Simple shell 0.3
+### 3\. Simple shell 0.3
 
 mandatory
 
 Simple shell 0.2 +
 
--   Handle the `PATH`
--   `fork` must not be called if the command doesn't exist
+-  Handle the PATH
+-  fork must not be called if the command doesn’t exist
 
 ```
 julien@ubuntu:~/shell$ ./shell_0.3
@@ -292,7 +282,7 @@ env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     shell
 :) ls
 barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3  stat    test_scripting.sh  wait.c
 env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     shell.c    stat.c  wait
-:) ls -l /tmp
+:) ls -l /tmp 
 total 20
 -rw------- 1 julien julien    0 Dec  5 12:09 config-err-aAMZrR
 drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-colord.service-V7DUzr
@@ -300,35 +290,34 @@ drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a4434973
 drwx------ 3 root   root   4096 Dec  5 12:07 systemd-private-062a0eca7f2a44349733e78cb4abdff4-systemd-timesyncd.service-CdXUtH
 -rw-rw-r-- 1 julien julien    0 Dec  5 12:09 unity_support_test.0
 :) ^C
-julien@ubuntu:~/shell$
-
+julien@ubuntu:~/shell$ 
 ```
 
 **Repo:**
 
 -   GitHub repository: `simple_shell`
 
-### 5\. Simple shell 0.4
+### 4\. Simple shell 0.5
 
 mandatory
 
 Simple shell 0.3 +
 
--   Implement the `exit` built-in, that exits the shell
--   Usage: `exit`
--   You don't have to handle any argument to the built-in `exit`
+-  Implement the exit built-in, that exits the shell
+-  Usage: exit
+-  You don’t have to handle any argument to the built-in exit
 
 **Repo:**
 
 -   GitHub repository: `simple_shell`
 
-### 6\. Simple shell 1.0
+### 5\. Simple shell 1.0
 
 mandatory
 
 Simple shell 0.4 +
 
--   Implement the `env` **built-in**, that prints the current environment
+- Implement the env built-in, that prints the current environment
 
 ```
 julien@ubuntu:~/shell$ ./simple_shell
@@ -349,24 +338,38 @@ $ exit
 julien@ubuntu:~/shell$
 
 ```
+**Repo:**
+
+-   GitHub repository: `simple_shell`
+
+### 6\. Simple shell 0.0.1
+
+mandatory
+
+Simple shell 0.1 +
+
+Write your own getline function
+-  Use a buffer to read many chars at once and call the least possible the read system call
+-  You will need to use static variables
+-  You are not allowed to use getline
+You don’t have to:
+
+-  be able to move the cursor
+
 
 **Repo:**
 
 -   GitHub repository: `simple_shell`
 
-### 7\. What happens when you type `ls -l *.c` in the shell
+### 7\. Simple shell 0.2.1
 
 mandatory
 
-Write a blog post describing step by step what happens when you type `ls -l *.c` and hit Enter in a shell. Try to explain every step you know of, going in as much details as you can, give examples and draw diagrams when needed. You should merge your previous knowledge of the shell with the specifics of how it works under the hoods (including syscalls).
+Simple shell 0.2 +
 
--   Have at least one picture, at the top of the blog post
--   Publish your blog post on Medium or LinkedIn
--   Share your blog post at least on LinkedIn
--   Only one blog post by team
--   The blog post must be done and published before the first deadline (it will be part of the manual review)
--   Please, remember that these blogs must be written in English to further your technical ability in a variety of settings
+- You are not allowed to use strtok
 
-When done, please add all urls below (blog post, LinkedIn post, etc.)
 
-#### Add URLs here:
+**Repo:**
+
+-   GitHub repository: `simple_shell`
