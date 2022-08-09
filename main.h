@@ -15,4 +15,5 @@ void type_prompt(void);
 char *_strcat(char *dest, char *src);
 void get_command(char *str, char **av);
 
+
 #endif
