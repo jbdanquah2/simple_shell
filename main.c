@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - Entry point
- * @ac: arguments count
- * @av: arguments
- * @env: environment variables
+ * main - Entry point.
+ * @ac: arguments count.
+ * @av: arguments.
+ * @env: environment variables.
  *
- * Return: nothing
+ * Return: nothing.
  */
 
 int main(int ac, char *av[], char **env)
@@ -91,11 +91,11 @@ void get_command(char *str, char **av)
 }
 
 /**
- * _strcat - concats a source string to a destination string
- * @dest: destination string
- * @src: source string
+ * _strcat - concats a source string to a destination string.
+ * @dest: destination string.
+ * @src: source string.
  *
- * Return: a pointer to the resulting string
+ * Return: a pointer to the resulting string.
  */
 char *_strcat(char *dest, char *src)
 {
