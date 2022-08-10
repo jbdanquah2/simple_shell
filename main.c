@@ -37,7 +37,7 @@ int main(int ac, char *av[], char **env)
 			perror("Error:");
 		}
 
-		ptr = strtok(string, " ");
+		ptr = strtok(string, " \n");
 
 		if ((strncmp("exit", ptr, 4) == 0))
 			break;
@@ -64,49 +64,4 @@ int main(int ac, char *av[], char **env)
 		free(string); /* free the memory */
 	}
 	return (0);
-}
-
-/**
- * get_command - Retrieves the commnad list from the shell
- * @str: pointer to the commands pass by the user
- * @av: pointer to the argv
- *
- * Return: nothing
- */
-void get_command(char *str, char **av)
-{
-	char *p;
-	int i = 0;
-
-	p = strtok(str, " "); /* splits the string */
-	while (p != NULL)
-	{
-		if (strcmp(p, "\n"))
-			break;
-		av[i] = p;
-		i++;
-		p = strtok(NULL, " ");
-	}
-	av[i] = NULL; /* terminates with NULL */
-}
-
-/**
- * _strcat - concats a source string to a destination string.
- * @dest: destination string.
- * @src: source string.
- *
- * Return: a pointer to the resulting string.
- */
-char *_strcat(char *dest, char *src)
-{
-	char *ptr = dest;
-	int i, len1, len2;
-
-	len1 = strlen(dest);
-	len2 = strlen(src);
-	for (i = 0; i <= len2; i++)
-	{
-		dest[len1 + i] = src[i];
-	}
-	return (ptr);
 }
