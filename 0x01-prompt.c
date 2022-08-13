@@ -5,7 +5,6 @@
  *
  * Return: nothing
  */
-
 void type_prompt(void)
 {
 	printf("$ ");
