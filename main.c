@@ -15,7 +15,7 @@
  	char *string, *ptr, *argv[12];
  	struct stat st;
  	pid_t pid;
- 	int j = 0, bytes_read;
+ 	int n = 0, bytes_read;
 
  	while (1)
  	{
@@ -23,7 +23,7 @@
 
  		type_prompt(); /* prints $ at the prompt */
  		if (ac > 1)
- 			printf("%s\n", av[j]);
+ 			printf("%s\n", av[n]);
 
  		string = malloc(sizeof(char) * size);
  		if (string == NULL)
