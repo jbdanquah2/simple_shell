@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strcat - concats a source string to a destination string
  * @dest: destination string
