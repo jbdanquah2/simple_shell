@@ -15,8 +15,6 @@ void get_command(char *str, char **av)
 	p = strtok(str, " \n"); /* splits the string */
 	while (p != NULL)
 	{
-		if (strcmp(p, "\n"))
-			break;
 		av[i] = p;
 		i++;
 		p = strtok(NULL, " \n");

@@ -24,7 +24,6 @@ int main(int ac, char *av[], char **env)
 		type_prompt(); /* prints $ at the prompt */
 		if (ac > 1)
 			printf("%s\n", av[j]);
-
 		string = malloc(sizeof(char) * size);
 		if (string == NULL)
 		{
@@ -36,17 +35,13 @@ int main(int ac, char *av[], char **env)
 		{
 			perror("Error:");
 		}
-
 		ptr = strtok(string, " \n");
 
 		if ((strncmp("exit", ptr, 4) == 0))
 			break;
 		_strcat(cmd, ptr);
-
 		if (stat(cmd, &st) == 0)
 		{
-			if ((strlen(string) > 0) && (string[strlen (string) - 1] == '\n'))
-        			string[strlen (string) - 1] = '\0';
 			get_command(string, argv);
 			argv[0] = cmd;
 
